@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+qs = ["q1.txt", "q2.txt", "q3.txt", "q4.txt", "q5.txt", "q7.txt"]
+ds = {}
+path = ""
+x = ""  # file content
+
+def stdQs(path,qs):
+
+with open(path) as f:
+   s = f.readlines()
+
+i = 0
+while i < len(qs):
+   if qs[i] in s:
+      ds[qs[i]] = x  # file content
+   else:
+      ds[qs[i]] = " "
+   i = i + 1
+
+return ds  # return dictionary
